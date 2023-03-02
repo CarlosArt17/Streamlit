@@ -12,7 +12,6 @@ def load_data(nrows):
 def load_data_byname(name):
     data = pd.read_csv(DATA_URL,index_col=0, encoding='latin-1')
     filtered_data_byname = data[data['name'].str.contains(name)]
-    name.isupper()
     return filtered_data_byname
 
 def load_data_bydirector(director):
@@ -21,7 +20,7 @@ def load_data_bydirector(director):
 
     return filtered_data_bysex
 
-data_load_state = st.text('Done! (Using st.cache)')
+data_load_state = st.text('Carlos Arturo Jose Fragoso - S20006730')
 data = load_data(500)
 st.header("Todos los filmes")
 
