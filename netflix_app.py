@@ -25,6 +25,7 @@ data_load_state = st.text('Done! (Using st.cache)')
 data = load_data(500)
 st.header("Todos los filmes")
 
+st.sidebar.image("personal.jpg")
 
 sidebar = st.sidebar
 agree = sidebar.checkbox("Mostrar todos los filmes")
